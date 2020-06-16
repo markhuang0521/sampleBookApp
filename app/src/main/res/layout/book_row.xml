@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_book"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp">
+
+    <RelativeLayout
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:id="@+id/layout_card_collapsed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_book_image"
+
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+
+                android:id="@+id/tv_book_title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_book_image"
+                android:layout_centerHorizontal="true"
+                android:text="Book title" />
+
+            <ImageView
+                android:id="@+id/btn_card_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_book_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_expanded_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_card_collapsed"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/author_text"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Author: " />
+
+            <TextView
+                android:id="@+id/tv_book_author"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/author_text"
+                android:text=" mark " />
+
+            <TextView
+                android:id="@+id/tv_book_desc"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_text"
+                android:layout_marginTop="7dp"
+                android:text="Short Description: " />
+
+            <ImageView
+                android:id="@+id/btn_card_up_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_book_desc"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_up_arrow" />
+
+            <TextView
+                android:id="@+id/btn_card_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_book_desc"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/btn_card_up_arrow"
+                android:text="Delete"
+                android:textColor="@android:color/holo_red_light"
+                 />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+

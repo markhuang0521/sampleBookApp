@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="toolbarStyle">@style/CustomToolBarStyle</item>
+<!--        <item name="android:windowAnimationStyle">@style/CustomEntryAnim</item>-->
+
+    </style>
+
+    <style name="CustomToolBarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="CustomEntryAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out</item>
+
+    </style>
+
+</resources>

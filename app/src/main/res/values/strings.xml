@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroBook</string>
+    <string name="activity_all_books">All Books</string>
+    <string name="activity_current_books">Current Reading Books</string>
+    <string name="activity_already_read_books">Already Read Books</string>
+    <string name="activity_favorite_books">Favorite Books</string>
+    <string name="activity_wishlist_books">Wish List</string>
+    <string name="activity_book_detail">Book Detail</string>
+</resources>
